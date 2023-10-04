@@ -1,0 +1,98 @@
+@charset "UTF-8";
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+header a.logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+header a.logo i {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+header nav.navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0 1.5rem;
+  color: var(--light-black);
+  transition: all 0.2s linear;
+}
+header nav.navbar a:hover {
+  color: #fff;
+  background-color: var(--green);
+}
+header nav.navbar a.active {
+  color: #fff;
+  background-color: var(--green);
+}
+header div.icons i,
+header div.icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  background-color: #eee;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+header div.icons i:hover,
+header div.icons a:hover {
+  background-color: var(--green);
+  color: #fff;
+  transform: rotate(360deg);
+}
+header div.icons #menu-bars {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header div.icons #menu-bars {
+    display: inline-block;
+  }
+  header nav.navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* 用來創建一個只有元素的一部分可見的剪切區域 */
+    transition: all 0.2s linear;
+  }
+  header nav.navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: #eee;
+  }
+  header nav.navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}/*# sourceMappingURL=Header.css.map */
