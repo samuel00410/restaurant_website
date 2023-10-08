@@ -1,0 +1,75 @@
+section.home {
+  padding: 2rem 9%;
+  .home-slider {
+    .slide {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      padding-top: 9rem;
+
+      .content {
+        flex: 1 1 45rem;
+
+        span {
+          color: var(--green);
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          color: var(--black);
+          font-size: 7rem;
+        }
+
+        p {
+          color: var(--light-color);
+          font-size: 2.2rem;
+          padding: 0.5rem 0;
+          line-height: 1.5;
+        }
+
+        a.btn {
+          margin-top: 1rem;
+          font-size: 1.7rem;
+          background-color: var(--black);
+          color: #fff;
+          padding: 0.8rem 3rem;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          transition: all 0.2s linear;
+
+          &:hover {
+            background-color: var(--green);
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+
+      .image {
+        flex: 1 1 45rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .mySwiper {
+      .swiper-pagination-bullet-active {
+        background-color: var(--green);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768) {
+  .home-slider {
+    .slide {
+      .content {
+        h3 {
+          color: var(--black);
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
