@@ -1,0 +1,82 @@
+section.about {
+  padding: 2rem 9%;
+}
+section.about .sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+section.about .heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+section.about div.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+section.about div.row div.image {
+  flex: 1 1 45rem;
+}
+section.about div.row div.image div.image {
+  width: 100%;
+}
+section.about div.row div.content {
+  flex: 1 1 45rem;
+}
+section.about div.row div.content h3 {
+  color: var(--black);
+  font-size: 4rem;
+  padding: 0.5rem 0;
+}
+section.about div.row div.content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+section.about div.row div.content div.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+section.about div.row div.content div.icons-container div.icons {
+  background: #eee;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  padding: 1.5rem 1rem;
+}
+section.about div.row div.content div.icons-container div.icons i {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+section.about div.row div.content div.icons-container div.icons span {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+section.about div.row a.btn {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  background-color: var(--black);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+section.about div.row a.btn:hover {
+  background-color: var(--green);
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=style.css.map */
