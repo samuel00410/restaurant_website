@@ -36,7 +36,7 @@ const Header = () => {
             關於我們
           </Link>
           <Link smooth to="#menu">
-            菜餐
+            菜單
           </Link>
           <Link smooth to="#review">
             評論

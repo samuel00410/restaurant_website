@@ -2,6 +2,7 @@ import React from "react";
 import Dishes from "../Dishes/Dishes";
 import About from "../About/About";
 import Menu from "../Menu/Menu";
+import Review from "../Review/Review";
 import { Swiper, SwiperSlide } from "swiper/react";
 import noodles from "../../images/zoshua-colah-20c49Lo5IcY-unsplash-removebg-preview.png";
 import friedchicken from "../../images/leo-roza-zNqArwc7Hh4-unsplash-removebg-preview.png";
@@ -88,6 +89,7 @@ const Home = () => {
       <Dishes />
       <About />
       <Menu />
+      <Review />
     </>
   );
 };
