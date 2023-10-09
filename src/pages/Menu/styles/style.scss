@@ -1,0 +1,112 @@
+section.menu {
+  padding: 2rem 9%;
+
+  .sub-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .heading {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  div.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+
+    div.box {
+      flex: 1 1 30rem; // 至少寬度 30rem
+      max-width: 30rem;
+      background-color: #fff;
+      border: 0.1rem solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      box-shadow: var(--box-shadow);
+
+      div.image {
+        height: 25rem;
+        width: 100%;
+        padding: 1.5rem;
+        overflow: hidden;
+        position: relative;
+
+        img {
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 100%;
+        }
+
+        a {
+          position: absolute;
+          top: 2.5rem;
+          right: 2.5rem;
+          width: 5rem;
+          height: 5rem;
+          line-height: 5rem;
+          text-align: center;
+          font-size: 2rem;
+          background-color: #fff;
+          border-radius: 50%;
+          color: var(--black);
+          transition: all 0.2s linear;
+
+          &:hover {
+            background-color: var(--green);
+            color: #fff;
+          }
+        }
+      }
+
+      div.content {
+        padding: 2rem;
+        padding-top: 0;
+
+        div.stars {
+          padding-bottom: 1rem;
+          i {
+            font-size: 1.7rem;
+            color: var(--green);
+          }
+        }
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          padding: 0.5rem 0;
+          line-height: 1.5;
+        }
+
+        span {
+          font-size: 2.5rem;
+          margin-left: 1rem;
+          color: var(--green);
+        }
+
+        a.btn {
+          margin-top: 1rem;
+          font-size: 1.7rem;
+          background-color: var(--black);
+          color: #fff;
+          padding: 0.8rem 2rem;
+          border-radius: 0.5rem;
+          cursor: pointer;
+          transition: all 0.2s linear;
+
+          &:hover {
+            background-color: var(--green);
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+    }
+  }
+}

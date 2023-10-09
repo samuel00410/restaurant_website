@@ -23,7 +23,7 @@ section.about div.row {
 section.about div.row div.image {
   flex: 1 1 45rem;
 }
-section.about div.row div.image div.image {
+section.about div.row div.image img {
   width: 100%;
 }
 section.about div.row div.content {

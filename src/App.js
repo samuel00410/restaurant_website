@@ -3,7 +3,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home/Home";
 import Dishes from "./pages/Dishes/Dishes";
 import About from "./pages/About/About";
-import Menu from "./pages/Menu";
+import Menu from "./pages/Menu/Menu";
 import Review from "./pages/Review";
 import Order from "./pages/Order";
 
