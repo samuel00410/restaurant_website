@@ -1,0 +1,80 @@
+section.order {
+  padding: 2rem 9%;
+  background-color: #eee;
+}
+section.order .sub-heading {
+  text-align: center;
+  color: var(--green);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+section.order .heading {
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+section.order form.order-form {
+  max-width: 90rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+section.order form.order-form div.inputbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.order form.order-form div.inputbox div.input {
+  width: 49%;
+}
+section.order form.order-form div.inputbox div.input span {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+section.order form.order-form div.inputbox div.input input,
+section.order form.order-form div.inputbox div.input textarea {
+  border: none;
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+section.order form.order-form div.inputbox div.input input:focus,
+section.order form.order-form div.inputbox div.input textarea:focus {
+  border: 0.1rem solid var(--green);
+}
+section.order form.order-form div.inputbox div.input textarea {
+  height: 20rem;
+  resize: none;
+}
+section.order form.order-form button.btn {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  background-color: var(--black);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+section.order form.order-form button.btn:hover {
+  background-color: var(--green);
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 450px) {
+  section.order form.order-form div.inputbox div.input {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
