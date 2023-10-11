@@ -4,6 +4,7 @@ import About from "../About/About";
 import Menu from "../Menu/Menu";
 import Review from "../Review/Review";
 import Order from "../Order/Order";
+import Loader from "../../components/Loader";
 import { Swiper, SwiperSlide } from "swiper/react";
 import noodles from "../../images/zoshua-colah-20c49Lo5IcY-unsplash-removebg-preview.png";
 import friedchicken from "../../images/leo-roza-zNqArwc7Hh4-unsplash-removebg-preview.png";
@@ -19,6 +20,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Home = () => {
   return (
     <>
+      <Loader />
       <section className="home" id="home">
         <div className="home-slider">
           <div className="wrapper">
